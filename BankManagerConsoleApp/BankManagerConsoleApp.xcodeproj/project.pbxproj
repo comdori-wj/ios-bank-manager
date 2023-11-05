@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		043364092AF669E200F051D8 /* Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043364082AF669E200F051D8 /* Bank.swift */; };
+		0433640D2AF66B1800F051D8 /* Teller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0433640C2AF66B1800F051D8 /* Teller.swift */; };
 		04923AFB2AEF433300D9637C /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04923AFA2AEF433300D9637C /* Queue.swift */; };
 		04923AFD2AEF433F00D9637C /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04923AFC2AEF433F00D9637C /* LinkedList.swift */; };
 		04D5A5792AF0B7EF0043FF9F /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D5A5782AF0B7EF0043FF9F /* Customer.swift */; };
@@ -37,6 +39,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		043364082AF669E200F051D8 /* Bank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bank.swift; sourceTree = "<group>"; };
+		0433640C2AF66B1800F051D8 /* Teller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Teller.swift; sourceTree = "<group>"; };
 		04923AFA2AEF433300D9637C /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 		04923AFC2AEF433F00D9637C /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
 		04D5A5782AF0B7EF0043FF9F /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
@@ -79,7 +83,9 @@
 		04D5A5772AF0B6320043FF9F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				043364082AF669E200F051D8 /* Bank.swift */,
 				04D5A5782AF0B7EF0043FF9F /* Customer.swift */,
+				0433640C2AF66B1800F051D8 /* Teller.swift */,
 				378684F72AF3337E000D16BA /* WorkType.swift */,
 			);
 			path = Models;
@@ -236,8 +242,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7694E7A259C3EC00053667F /* main.swift in Sources */,
+				043364092AF669E200F051D8 /* Bank.swift in Sources */,
 				04D5A57C2AF0BDB90043FF9F /* InterfaceMessage.swift in Sources */,
 				04923AFB2AEF433300D9637C /* Queue.swift in Sources */,
+				0433640D2AF66B1800F051D8 /* Teller.swift in Sources */,
 				04D5A5792AF0B7EF0043FF9F /* Customer.swift in Sources */,
 				04923AFD2AEF433F00D9637C /* LinkedList.swift in Sources */,
 				378684FC2AF33771000D16BA /* WorkType.swift in Sources */,
