@@ -13,6 +13,7 @@ final class Bank {
     }
     
     func work(completion: @escaping () -> Void) {
+        clearStatus()
         gatherCustomers()
         
         tellers.forEach { teller in
@@ -50,5 +51,10 @@ extension Bank {
             let customer = Customer(id: count)
             customerQueue.enqueue(customer)
         }
+    }
+    
+    private func clearStatus() {
+        servicedCustomersCount = 0
+        totalServicedTimes = 0
     }
 }

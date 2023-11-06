@@ -17,7 +17,7 @@ enum WorkType: CustomStringConvertible, CaseIterable {
         }
     }
     
-    var timeCost: Double {
+    var timeCost: TimeInterval {
         switch self {
         case .deposit: 0.7
         case .loan: 1.1
