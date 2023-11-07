@@ -19,9 +19,10 @@ final class Bank {
             DispatchQueue.global().async(group: dispatchGroup) { [self] in
                 while customerQueue.isEmpty == false {
                     semaphore.wait()
+                    
                     guard let customer = customerQueue.peek(), customer.workType == teller.workType else {
                         semaphore.signal()
-                        return
+                        continue
                     }
                     
                     guard let customer = customerQueue.dequeue() else { return }
