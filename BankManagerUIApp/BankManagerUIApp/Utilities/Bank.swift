@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol BankDelegate: TellerWorkingStateNotifiable {
+protocol BankDelegate: TellerDelegate {
     func gatherCustomers(bank: Bank, from startCount: Int, to endCount: Int)
     func updateWaitingCustomersList(bank: Bank, customer: Customer)
     func updateWorkingCustomersList(bank: Bank, customer: Customer)

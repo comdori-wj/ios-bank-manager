@@ -11,15 +11,15 @@ protocol TellerProtocol {
     func service(to customer: Customer, completion: @escaping () -> Void)
 }
 
-protocol TellerWorkingStateNotifiable: AnyObject {
+protocol TellerDelegate: AnyObject {
     func notifyCustomerDidMatch(teller: Teller, customer: Customer)
 }
 
 struct Teller: TellerProtocol {
     private let semaphore: DispatchSemaphore
-    private weak var bankManager: TellerWorkingStateNotifiable?
+    private weak var bankManager: TellerDelegate?
     
-    init(tellerCount: Int, bankManager: TellerWorkingStateNotifiable) {
+    init(tellerCount: Int, bankManager: TellerDelegate) {
         self.semaphore = DispatchSemaphore(value: tellerCount)
         self.bankManager = bankManager
     }
