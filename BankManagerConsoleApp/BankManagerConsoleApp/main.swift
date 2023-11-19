@@ -5,3 +5,6 @@
 // 
 
 import Foundation
+
+private let bankManager = BankManager()
+bankManager.run()
